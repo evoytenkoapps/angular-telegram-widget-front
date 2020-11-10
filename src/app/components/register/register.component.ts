@@ -15,8 +15,6 @@ import { environment } from '../../../environments/environment';
 export class RegisterComponent implements OnInit, AfterViewInit {
   @ViewChild('script', { static: true }) script: ElementRef;
   private botName: string = environment.botName;
-  private botDomain: string = environment.botDomain;
-  public url: string = `https://oauth.telegram.org/embed/${this.botName}?origin=https%3A%2F%2F${this.botDomain}&size=large&request_access=write`;
 
   constructor() {}
 
