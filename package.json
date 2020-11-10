@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration=production --output-path /usr/share/nginx/telegram-widget-front/",
+    "build": "ng build --configuration=production  --deploy-url /widget/ --output-path /usr/share/nginx/telegram-widget-front/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
