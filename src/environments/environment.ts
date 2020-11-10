@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  botName: 'jozikrobot'
+  botName: 'jozikrobot',
+  botDomain: 'test.jozik.ru',
 };
 
 /*

@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  botName: 'jozikrobot'
+  botName: 'jozikrobot',
+  botDomain: 'test.jozik.ru',
 };
