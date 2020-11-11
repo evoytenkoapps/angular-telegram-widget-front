@@ -4,7 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class TelegramAuthService {
-  constructor() {
+  constructor() {}
+
+  init() {
     window['loginViaTelegram'] = (loginData) => this.loginResult(loginData);
   }
 
