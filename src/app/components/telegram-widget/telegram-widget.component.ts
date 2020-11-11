@@ -5,7 +5,7 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-telegram-widget',
@@ -18,9 +18,8 @@ export class TelegramWidgetComponent implements OnInit, AfterViewInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    window['loginViaTelegram'] = (loginData) => this.loginResult(loginData);
-  }
+  ngOnInit(): void {}
+
   ngAfterViewInit() {
     this.convertToScript();
   }
@@ -35,9 +34,5 @@ export class TelegramWidgetComponent implements OnInit, AfterViewInit {
     script.setAttribute('data-onauth', 'loginViaTelegram(user)');
     script.setAttribute('data-request-access', 'write');
     element.parentElement.replaceChild(script, element);
-  }
-
-  public loginResult(data: any) {
-    console.log('loginResult', data);
   }
 }
